@@ -1,0 +1,133 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{mathptmx}
+\usepackage{indentfirst}
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage[paperheight=29.7cm,paperwidth=21cm,right=2cm,left=3cm,top=2cm,bottom=2.5cm]{geometry}
+\usepackage[fontsize=13pt]{scrextend}
+\usepackage{lipsum}
+\graphicspath{{figures/}}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{makecell}
+\usepackage{hyperref}
+\usepackage[absolute,overlay]{textpos}  % For positioning text blocks
+\usepackage{tocloft}  % For customizing the TOC
+\usepackage{titlesec} % For customizing section numbering and styles
+
+\renewcommand{\thesection}{\Roman{section}}
+% Redefine subsection numbering to numeric
+\renewcommand{\thesubsection}{\arabic{subsection}}
+
+\newcolumntype{a}{>{\hsize = 1.1\hsize}X}
+\newcolumntype{s}{>{\hsize=2\hsize}X}
+
+\begin{document}
+
+% Cover page
+\begin{titlepage}
+
+% University Logo
+\begin{textblock*}{10cm}(2cm,3cm)   % Adjust the position as needed
+    \includegraphics[scale=0.15]{images/Logo_Trường_Đại_học_FPT.png}  % Adjust the scale as needed
+\end{textblock*}
+
+% Ministry and University Names
+\begin{textblock*}{13cm}(7cm,3.5cm)
+    {\fontsize{16pt}{16pt}\selectfont \textbf{MINISTRY OF EDUCATION AND TRAINING}}
+\end{textblock*}
+
+\vspace*{8cm}
+
+
+% Project Title
+\begin{center}
+    {\Huge \textbf{Capstone Project Document}} \\[2ex]
+    \Large [Project Name]
+\end{center}
+
+\vspace{2cm} % Adjusted spacing between sections
+
+% Group Information
+\begin{center}
+    \textbf{Group Name} \\[1.5ex]
+    \begin{tabular}{l}
+        Group Members: \\
+        Member 1 \quad RollNo \quad Student code \\
+        Member 2 \quad RollNo \quad Student code \\
+        Member 3 \quad RollNo \quad Student code \\
+        Member 4 \quad RollNo \quad Student code \\
+        Member 5 \quad RollNo \quad Student code \\
+    \end{tabular}
+\end{center}
+
+\vspace{2cm} % Adjusted spacing between sections
+
+% Supervisor Information
+\begin{center}
+    \textbf{Supervisor:} [Supervisor Name] \\
+    \textbf{External Supervisor:} [External Supervisor Name] \\[2.5ex]
+    \textbf{Capstone Project Code: [Code]}
+\end{center}
+
+\vfill % Pushes content up to center it vertically
+
+% Footer with Location and Date
+\begin{center}
+    - Hanoi, \today -
+\end{center}
+
+\end{titlepage}
+
+\cleardoublepage
+\begin{center}
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+\tableofcontents
+\thispagestyle{empty}
+\cleardoublepage
+\pagenumbering{arabic}
+
+\end{center}
+\addcontentsline{toc}{section}{Acknowledgement}
+\section*{Acknowledgement}
+
+\cleardoublepage
+\addcontentsline{toc}{section}{Definition and Acronyms}
+\section*{Definition and Acronyms}
+\begin{center}
+\begin{tabular}{|c|l|}
+\hline
+\textbf{Acronym} & \textbf{Definition} \\ \hline
+ & \\ \hline
+ & \\ \hline
+ &  \\ \hline
+ &  \\ \hline
+ &  \\ \hline
+ & \\ \hline
+ &  \\ \hline
+\end{tabular}
+\end{center}
+
+\cleardoublepage
+\begin{center}
+    
+\listoftables
+\thispagestyle{empty}
+\pagenumbering{arabic}
+\cleardoublepage
+
+\listoffigures
+\thispagestyle{empty}
+\pagenumbering{arabic}
+
+\end{center}
+\cleardoublepage
+
+\section{Section 1}
+\subsection{1}
+
+\end{document}

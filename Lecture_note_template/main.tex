@@ -1,0 +1,43 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{mathptmx}
+\usepackage{indentfirst}
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage[paperheight=29.7cm,paperwidth=21cm,right=2cm,left=3cm,top=2cm,bottom=2.5cm]{geometry}
+\usepackage[fontsize=13pt]{scrextend}
+\usepackage{indentfirst}
+\usepackage{lipsum}
+\renewcommand{\contentsname}{MỤC LỤC}
+\renewcommand{\tablename}{Bảng}
+\renewcommand{\listoffigures}{DANH MỤC HÌNH VẼ}
+\renewcommand{\listoftables}{DANH MỤC BẢNG BIỂU}
+\renewcommand{\figurename}{Hình}
+\graphicspath{ {figures/} }
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{makecell}
+\usepackage{hyperref}
+\usepackage{amsmath}
+
+\newcolumntype{a}{>{\hsize = 1.1\hsize}X}
+\newcolumntype{s}{>{\hsize=2\hsize}X}
+
+\title{}
+\author{}
+\date{\today}
+
+\begin{document}
+\maketitle
+\begin{center}
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+\tableofcontents
+\thispagestyle{empty}
+\cleardoublepage
+\pagenumbering{arabic}
+\end{center}
+
+\end{document}
